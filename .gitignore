@@ -22,7 +22,6 @@ ehthumbs.db # Windows specific
 /frontend-react/node_modules
 /frontend-react/.env
 /frontend-react/.env.* # For multiple environment files
-/frontend-react/build # React build folder
 /frontend-react/*.log
 /frontend-react/*.tmp
 /frontend-react/*.tmp.*
