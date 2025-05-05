@@ -1,6 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
 
+app.set('trust proxy', 1);
+
 import Song from "./models/song.js"
 import { connectDB } from "./db/conn.js";
 import songRoutes from "./routes/song.js";
@@ -25,7 +27,7 @@ app.use(helmet({
             defaultSrc: ["'self'"],
             scriptSrc: ["'self'", "'https://code.jquery.com'"],
             styleSrc: ["'self'", "'unsafe-inline'"],
-            imgSrc: ["'self'", "data:"],
+            imgSrc: ["'self'", "data:", "*"],
             fontSrc: ["'self'", "data:"],
             connectSrc: ["'self'"]
         }
