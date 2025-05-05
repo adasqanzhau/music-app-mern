@@ -1,0 +1,37 @@
+# Backend
+/node_modules
+package-lock.json
+yarn.lock
+.env
+.env.* # For multiple environment files
+npm-debug.log
+*.log
+*.tmp
+*.tmp.*
+*.tmp/* # For temporary files
+.DS_Store # macOS specific
+Thumbs.db # Windows specific
+ehthumbs.db # Windows specific
+*.local # Local configuration files
+*.pid # Process ID files
+*.seed # Seed files if any
+*.log # Log files
+
+
+# Frontend (React)
+/frontend-react/node_modules
+/frontend-react/.env
+/frontend-react/.env.* # For multiple environment files
+/frontend-react/build # React build folder
+/frontend-react/*.log
+/frontend-react/*.tmp
+/frontend-react/*.tmp.*
+/frontend-react/.DS_Store
+/frontend-react/Thumbs.db
+/frontend-react/ehthumbs.db
+/frontend-react/*.local
+/frontend-react/*.pid
+
+
+# IDE and Editor
+*.env
