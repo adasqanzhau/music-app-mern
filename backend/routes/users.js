@@ -53,7 +53,7 @@ router.post("/logout", async (req, res) => {
             if (decoded && decoded.exp) {
                 await RevokedToken.create({
                     token,
-                    expiresAt: new Date(decoded.exp * 1000) // Convert seconds to milliseconds
+                    expiresAt: new Date(decoded.exp * 1000)
                 });
             }
         } catch (error) {

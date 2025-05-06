@@ -169,7 +169,7 @@ app.get("/songs/:id", async (req, res) => {
 })
 
 app.post("/songs", async (req, res) => {
-    const { title, author, length, cover } = req.body; // Деструктурируем нужные поля
+    const { title, author, length, cover } = req.body;
 
     if (!title || !author) {
         return res.status(400).json({ success: false, message: "Required fields missing..." });
